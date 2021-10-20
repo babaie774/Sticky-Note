@@ -3,13 +3,13 @@ import Notes from './Notes'
 import NewSticky from './NewSticky'
 
 
-const Stickynote = (props: any) => {
+const StickyNote = (props: any) => {
     return (
         <div>
-            <Notes NoteList={props.NoteList.Notes} />
+            <Notes noteList={props.noteList} />
             <NewSticky />
         </div>
     )
 }
 
-export default Stickynote
+export default StickyNote

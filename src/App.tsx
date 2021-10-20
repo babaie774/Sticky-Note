@@ -1,16 +1,20 @@
 import React from 'react'
-import Stickynote from './Components/Stickynote'
+import StickyNote from './Components/StickyNote'
 
-const NoteList = {
-    Notes: [
-        'hi',
-        'hello'
-    ]
-}
-const App: React.FC = (NoteList) => {
+
+const App: React.FC = () => {
+
+    const noteList = {
+        notes: [
+            'hi',
+            'hello'
+        ]
+    }
+
+    console.log(noteList) //undefined
     return (
         <div>
-            <Stickynote NoteList={NoteList} />
+            <StickyNote noteList={noteList} />
         </div>
     )
 }

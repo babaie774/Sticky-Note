@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Note = (props) => {
+const Note = (props: any) => {
     return (
         <div>
-            <textarea>{props.text}</textarea>
+            <textarea>{props.note}</textarea>
         </div>
     )
 }
