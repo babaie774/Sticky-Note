@@ -1,9 +1,9 @@
 import React from 'react'
 
-const NewSticky = () => {
+const NewSticky = (props: any) => {
     return (
         <div>
-            <div id="create">+</div>
+            <div onClick={() => { props.addNote() }} id="create">+</div>
         </div>
     )
 }

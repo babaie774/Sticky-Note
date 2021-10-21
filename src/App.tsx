@@ -1,20 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import StickyNote from './Components/StickyNote'
 
 
 const App: React.FC = () => {
 
-    const noteList = {
+    const initNoteList = {
         notes: [
-            'hi',
-            'hello'
+            ""
         ]
     }
 
-    console.log(noteList) //undefined
+
+    const [noteList, preNoteList] = useState<any>(initNoteList.notes)
+
+    const addNewNote: any = () => {
+        preNoteList((PrevState: any) => ([...PrevState, ""]))
+    }
+
+
     return (
         <div>
-            <StickyNote noteList={noteList} />
+            <StickyNote addNewNote={addNewNote} noteList={noteList} />
         </div>
     )
 }

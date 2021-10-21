@@ -3,10 +3,9 @@ import Note from './Note'
 
 
 const Notes = (props: any) => {
-    console.log(props.noteList.notes)
-    const note = props.noteList.notes.map((note: any) => {
+    const note = props.noteList.map((note: any, index: number) => {
         return (
-            <Note note={note} />
+            <Note key={index} note={note} />
         )
     })
     return (

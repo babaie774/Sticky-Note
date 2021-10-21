@@ -7,7 +7,7 @@ const StickyNote = (props: any) => {
     return (
         <div>
             <Notes noteList={props.noteList} />
-            <NewSticky />
+            <NewSticky addNote={props.addNewNote} />
         </div>
     )
 }

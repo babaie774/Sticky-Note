@@ -3,7 +3,9 @@ import React from 'react'
 const Note = (props: any) => {
     return (
         <div>
-            <textarea>{props.note}</textarea>
+            <textarea
+                defaultValue={props.note}
+            ></textarea>
         </div>
     )
 }
