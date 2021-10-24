@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
-import StickyNote from './Components/StickyNote'
+import StickyNote from './Components/Stickynote'
 
 
 const App: React.FC = () => {
-
     const initNoteList = {
         notes: [
-            ""
+            "hi"
         ]
     }
 
