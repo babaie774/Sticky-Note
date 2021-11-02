@@ -5,8 +5,7 @@ import StickyNote from './Components/Stickynote'
 const App: React.FC = () => {
     const initNoteList = {
         notes: [
-            "hi",
-            "ok"
+            ""
         ]
     }
 
@@ -19,10 +18,11 @@ const App: React.FC = () => {
 
 
     return (
-        <div>
+        <React.Fragment>
             <StickyNote addNewNote={addNewNote} noteList={noteList} />
-        </div>
+        </React.Fragment>
     )
 }
+
 
 export default App
